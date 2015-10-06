@@ -70,4 +70,4 @@ class AnswerDeleteView(DeleteView):
     template_name = 'answer/answer_confirm_delete.html'
 
     def get_success_url(self):
-        return self.object.question.get_absolute_url
+        return self.object.question.get_absolute_url()
